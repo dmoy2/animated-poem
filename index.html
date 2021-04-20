@@ -2,12 +2,17 @@
 <html lang='en'>
     <head>
         <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Celebration</title>
-        <link rel="stylesheet" href="./style.css" type="text/css">
 
         <!-- Font Links -->
         <link rel="preconnect" href="https://fonts.gstatic.com"> 
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Six+Caps&display=swap" rel="stylesheet">
+        
+        <!-- AOS Link  -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="./style.css" type="text/css">
     </head>
     <body>
         <header>
@@ -16,10 +21,23 @@
                 <h3 class="author">Yesika Salgado, "Corazón"</h3>
             </div>
         </header>
-        
-        <div class="container">
-            <div class="tonight animated">Tonight</div>
-            <p class="text">I'm gonna</p>
-        </div>
+        <main>
+            <div class="container">
+                <img src="./imgs/moon.png" alt="Moon" id="moon" data-aos="fade-up">
+                <div class="animated">Tonight</div>
+                <p class="text">I'm gonna</p>
+                <div class="dance animated">Dance</div>
+                <p class="text">like the sky ain't <span>falling</span></p>
+            </div>
+        </main>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init({
+              offset: 400,
+              duration: 1500
+          });
+        </script>
     </body>
 </html>
+

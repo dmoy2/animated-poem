@@ -10,6 +10,7 @@ html, body {
     font-size: 30px;
     letter-spacing: 10px;
     height: 100%;
+    width: 100%;
     margin: 0;
     border: 0;
     padding: 0;
@@ -27,15 +28,18 @@ html, body {
 header {
     display: flex;
     height: 100%;
+    width: 100%;
     text-align: center;
-    background-image: linear-gradient( cadetblue, whitesmoke);
+    background-image: linear-gradient(#CC5500, whitesmoke);
     color: whitesmoke;
+    /* border: 1px solid black; */
 }
 
 .header {
     display: flex; 
     flex-flow: column wrap;
     margin: auto;
+    text-shadow: 0px 0px 4px grey;
 }
 
 .header .title {
@@ -43,18 +47,20 @@ header {
     letter-spacing: 1rem;
     font-size: 4rem;
     margin: 0;
-    text-shadow: 0px 0px 4px grey;
 }
 
 .header .author {
     font-family: "Playfair Display", Helvetica, serif;
     font-size: 1rem;
     letter-spacing: 0.5rem;
-    text-shadow: 0px 0px 4px grey;
 }
 
 
-/* Body Rules  */
+/* Main Rules  */
+
+main {
+    margin-top: 100px;
+}
 
 .container {
     display: flex;
@@ -67,4 +73,28 @@ header {
     margin: 30px auto;
     border: 0;
     padding: 0;
+}
+
+/* Line One */
+
+#moon {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 700px) {
+    .header .title {
+        letter-spacing: 0.75rem;
+        font-size: 2.5rem;
+    }
+
+    .header .author {
+        letter-spacing: 0.3rem;
+        font-size: 0.70rem;
+    }
 }
