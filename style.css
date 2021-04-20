@@ -1,3 +1,5 @@
+/* Main Colors: #CC5500, whitesmoke */
+
 /* Universal Rules */
 
 * { 
@@ -21,6 +23,7 @@ html, body {
     font-family: 'Six Caps', Helvetica, sans-serif;
     text-transform: uppercase;
     font-size: 4rem;
+    letter-spacing: 0.8rem;
 }
 
 /* Header Rules */
@@ -30,7 +33,7 @@ header {
     height: 100%;
     width: 100%;
     text-align: center;
-    background-image: linear-gradient(#CC5500, whitesmoke);
+    background-image: linear-gradient(cadetblue, whitesmoke);
     color: whitesmoke;
     /* border: 1px solid black; */
 }
@@ -59,7 +62,7 @@ header {
 /* Main Rules  */
 
 main {
-    margin-top: 100px;
+    margin: 100px 0px;
 }
 
 .container {
@@ -77,6 +80,11 @@ main {
 
 /* Line One */
 
+#tonight {
+    position: relative; 
+    left: 10px;
+}
+
 #moon {
     position: relative;
     height: 100px;
@@ -84,17 +92,67 @@ main {
     margin: auto;
 }
 
+#dance span { 
+    position: relative;
+    -webkit-animation: dance 1s ease-in infinite;
+            animation: dance 1s ease-in infinite;
+}
+
+#dance span:nth-child(1) { -webkit-animation-delay: .1s; animation-delay: .1s; }
+#dance span:nth-child(2) { -webkit-animation-delay: .3s; animation-delay: .3s; }
+#dance span:nth-child(3) { -webkit-animation-delay: .1s; animation-delay: .1s; }
+#dance span:nth-child(4) { -webkit-animation-delay: .3s; animation-delay: .3s; }
+#dance span:nth-child(5) { -webkit-animation-delay: .1s; animation-delay: .1s; }
+
+@keyframes dance {
+    0%, 100% { 
+        top: 0;
+    }
+    25%, 75% {
+        top: -15px;
+    }
+    50% {
+        top: -25px;
+    }
+}
+
+/* Line Two  */
+
+#rattle {
+    padding: 0 40%;
+}
+
+#rattle:hover {
+    animation: shake 1s linear infinite;
+    transition: color 600ms linear; 
+    color: cadetblue;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-2px, 0, 0);
+    }
+    20%, 80% {
+    transform: translate3d(4px, 0, 0);
+    }
+    30%, 50%, 70% {
+    transform: translate3d(-6px, 0, 0);
+    }
+    40%, 60% {
+    transform: translate3d(6px, 0, 0);
+    }
+}
+
 
 /* Media Queries */
 
 @media only screen and (max-width: 700px) {
-    .header .title {
-        letter-spacing: 0.75rem;
-        font-size: 2.5rem;
+    html, body {
+        font-size: 15px;
     }
 
-    .header .author {
-        letter-spacing: 0.3rem;
-        font-size: 0.70rem;
+    #moon {
+        width: 75px;
+        height: 75px;
     }
 }

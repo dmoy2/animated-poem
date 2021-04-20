@@ -24,19 +24,27 @@
         <main>
             <div class="container">
                 <img src="./imgs/moon.png" alt="Moon" id="moon" data-aos="fade-up">
-                <div class="animated">Tonight</div>
-                <p class="text">I'm gonna</p>
-                <div class="dance animated">Dance</div>
-                <p class="text">like the sky ain't <span>falling</span></p>
+                <div class="animated" id="tonight">Tonight,</div>
+                <p data-aos="fade-left">I'm gonna</p>
+                <div class="animated" id="dance">
+                    <span>D</span><span>A</span><span>N</span><span>C</span><span>E</span>
+                </div>
+                <p>like the sky ain't</p>
+                <div class="animated" id="falling" data-aos="fade-down" data-aos-delay="500">FALLING</div>
+            </div>
+            <div class="container" data-aos="fade" data-aos-delay="1000">
+                <p data-aos="fade-left">like my bones don't</p>
+                <div class="animated" id="rattle">rattle</div>
+                <p>for someone else</p>
             </div>
         </main>
 
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
-          AOS.init({
-              offset: 400,
-              duration: 1500
-          });
+            AOS.init({
+                offset: 200, 
+                duration: 2000
+            });
         </script>
     </body>
 </html>
