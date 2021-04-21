@@ -62,7 +62,7 @@ header {
 /* Main Rules  */
 
 main {
-    margin: 100px 0px;
+    margin: 100px 0;
 }
 
 .container {
@@ -85,7 +85,8 @@ main {
     left: 10px;
 }
 
-#moon {
+#moon,
+#sun {
     position: relative;
     height: 100px;
     width: 100px;
@@ -186,7 +187,7 @@ main {
 }
 
 
-/* Container 4 */
+/* Container Four */
 
 #holding { 
     -webkit-animation: squeeze 4s ease-in-out infinite; 
@@ -202,7 +203,7 @@ main {
 }
 
 
-/* Container 5 */
+/* Container Five */
 
 #door {
     position: absolute;
@@ -242,12 +243,23 @@ main {
 }
 
 
-/* Container 6 */
+/* Container Six */
 
 .elipses {
     display: flex; 
     flex-direction: column;
     font-size: 1.8rem;
+}
+
+
+/* Container Seven */
+
+.seven {
+    /* display: inline; */
+}
+
+#dance2 {
+    display: inline;
 }
 
 /* Media Queries */
@@ -257,7 +269,8 @@ main {
         font-size: 15px;
     }
 
-    #moon {
+    #moon,
+    #sun {
         width: 75px;
         height: 75px;
     }
