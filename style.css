@@ -85,8 +85,7 @@ main {
     left: 10px;
 }
 
-#moon,
-#sun {
+#moon {
     position: relative;
     height: 100px;
     width: 100px;
@@ -251,12 +250,27 @@ main {
     font-size: 1.8rem;
 }
 
+#tonight2 {
+    position: relative;
+}
+
+.star {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+}
+
+#left-star { 
+    left: 28%;
+}
+
+#right-star {
+    left: 62%;
+    transform: scaleX(-1);
+} 
+
 
 /* Container Seven */
-
-.seven {
-    /* display: inline; */
-}
 
 #dance2 {
     display: inline;
@@ -264,13 +278,20 @@ main {
 
 /* Media Queries */
 
+@media only screen and (max-width: 1000px) {
+    html, body {
+        font-size: 20px;
+    }
+}
+
 @media only screen and (max-width: 700px) {
     html, body {
         font-size: 15px;
+        letter-spacing: 6px;
     }
 
     #moon,
-    #sun {
+    #stars {
         width: 75px;
         height: 75px;
     }
@@ -283,5 +304,18 @@ main {
     #door {
         width: 75px;
         height: 100px;
+    }
+
+    .star {
+        width: 40px;
+        height: 40px;
+    }
+
+    #left-star {
+        left: 20%;
+    }
+
+    #right-star {
+        left: 68%;
     }
 }

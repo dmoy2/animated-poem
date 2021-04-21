@@ -22,6 +22,7 @@
             </div>
         </header>
         <main>
+            <!-- Line 1 -->
             <div class="container one">
                 <img src="./imgs/moon.png" alt="Moon" id="moon" data-aos="fade-up" data-aos-duration="3000">
                 <div class="animated" id="tonight" data-aos="fade">Tonight,</div>
@@ -32,11 +33,15 @@
                 <p>like the sky ain't</p>
                 <div class="animated" id="falling" data-aos="fade-down" data-aos-delay="500">FALLING</div>
             </div>
+
+            <!-- Line 2 -->
             <div class="container two">
                 <p data-aos="fade-right">like my bones don't</p>
                 <div class="animated" id="rattle">rattle</div>
                 <p>for someone else</p>
             </div>
+
+            <!-- Line 3 -->
             <div class="container three">
                 <p data-aos="fade-left">like I don't gotta</p>
                 <div class="animated" id="peel" style="letter-spacing: 0.5rem;" 
@@ -49,36 +54,52 @@
                 data-aos="zoom-out-down" data-aos-offset="300" data-aos-duration="3000">
                 <p>out of bed</p>
             </div>
+
+            <!-- Line 4 -->
             <div class="container four">
                 <p data-aos="fade-right">like I didn't take 2 hours of</p>
                 <div class="animated" id="holding">holding</div>
                 <p>my own hand</p>
             </div>
+
+            <!-- Line 5 -->
             <div class="container five">
                 <p>just to</p>
                 <div class="animated" id="walk" data-aos="fade" data-aos-offset="400">
                     <span>W</span><span>A</span><span>L</span><span>K</span>
                 </div>
-                <img src="./imgs/door.png" alt="Door" id="door" data-aos="fade">
+                <img src="./imgs/door.png" alt="Door" id="door" data-aos="fade" data-aos-anchor="#walk">
                 <p>out the door</p>
             </div>
-            <div class="container six">
-                <div class="elipses">
-                    <p data-aos="fade" data-aos-offset="350" data-aos-duration="3000">.</p>
-                    <p data-aos="fade" data-aos-offset="350" data-aos-duration="3000">.</p>
-                    <p data-aos="fade" data-aos-offset="350" data-aos-duration="3000">.</p>
-                </div>
-                <img src="./imgs/sun.png" alt="Sun" id="sun">
-                <div class="animated" id="tonight2">tonight</div>
+
+            <div class="container elipses">
+                <p data-aos="fade" data-aos-offset="350">.</p>
+                <p data-aos="fade" data-aos-offset="350">.</p>
+                <p data-aos="fade" data-aos-offset="350">.</p>
             </div>
+
+            <!-- Line 6 -->
+            <div class="container six">
+                <img src="./imgs/b-stars.png" alt="Stars" class="star" id="left-star" 
+                    data-aos="fade-down">
+                <div class="animated" id="tonight2" data-aos="fade">tonight</div>
+                <img src="./imgs/b-stars.png" alt="Stars" class="star" id="right-star"
+                    data-aos="fade-down">
+            </div>
+
+            <!-- Line 7 -->
             <div class="container seven">
                 <p>i'll</p>
                 <div class="animated"><span>D</span><span>A</span><span>N</span><span>C</span><span>E</span></div>
             </div>
+
+            <!-- Line 8 -->
             <div class="container eigth">
                 <p>i'll be</p>
                 <div class="animated" id="alive">alive</div>
             </div>
+
+            <!-- Line 9 -->
             <div class="container ninth">
                 <p>and ain't that worth the</p>
                 <div class="animated" id="party">party</div>
@@ -90,7 +111,7 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init({
-                offset: 200, 
+                offset: 175, 
                 duration: 2000
             });
         </script>
