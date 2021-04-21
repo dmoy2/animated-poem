@@ -242,6 +242,14 @@ main {
 }
 
 
+/* Container 6 */
+
+.elipses {
+    display: flex; 
+    flex-direction: column;
+    font-size: 1.8rem;
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 700px) {
