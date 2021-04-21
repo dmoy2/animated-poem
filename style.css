@@ -120,12 +120,8 @@ main {
 
 #rattle {
     padding: 0 40%;
-}
-
-#rattle:hover {
     animation: shake 1s linear infinite;
     transition: color 600ms linear; 
-    color: cadetblue;
 }
 
 @keyframes shake {
@@ -133,13 +129,14 @@ main {
         transform: translate3d(-2px, 0, 0);
     }
     20%, 80% {
-    transform: translate3d(4px, 0, 0);
+        transform: translate3d(4px, 0, 0);
     }
     30%, 50%, 70% {
-    transform: translate3d(-6px, 0, 0);
+        transform: translate3d(-6px, 0, 0);
+        color: rgba(95,158,160, 0.8);
     }
     40%, 60% {
-    transform: translate3d(6px, 0, 0);
+        transform: translate3d(6px, 0, 0);
     }
 }
 
@@ -157,8 +154,8 @@ main {
 
 #peel span { 
     position: relative;
-    -webkit-animation: peel 5s linear infinite;
-            animation: peel 5s linear infinite;
+    -webkit-animation: peel 4s linear infinite;
+            animation: peel 4s linear infinite;
 }
 
 #peel span:nth-child(1) { -webkit-animation-delay: .1s; animation-delay: .1s; }
@@ -173,25 +170,30 @@ main {
 #peel span:nth-child(10) { -webkit-animation-delay: 1s; animation-delay: 1.9s; }
 
 @keyframes peel {
-    25% { 
+    15% { 
         top: -20px;
         left: 5px;
         color: rgba(95,158,160, 0.8);
-    }
-    50% {
-        top: -25px;
-        left: 10px;
-        color: rgba(95,158,160, 0.6);
-    }
-    75% { 
-        top: -30px;
-        left: 15px;
-        color: rgba(95,158,160, 0.4);
     }
     100% {
         top: -35px;
         left: 20px;
         color: rgba(95,158,160, 0.2);
+    }
+}
+
+
+/* Container 4 */
+
+#holding { 
+    animation: squeeze 4s ease-in-out infinite;
+}
+
+@keyframes squeeze {
+    50% {
+        transform: skewX(10deg);
+        transform: scale(0.9, 1.2);
+        color: rgba(95,158,160, 0.8);
     }
 }
 
