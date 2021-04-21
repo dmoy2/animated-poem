@@ -16,7 +16,7 @@ html, body {
     margin: 0;
     border: 0;
     padding: 0;
-    background: whitesmoke;
+    background: #f8fbfb;
 }
 
 .animated {
@@ -33,7 +33,7 @@ header {
     height: 100%;
     width: 100%;
     text-align: center;
-    background-image: linear-gradient(cadetblue, whitesmoke);
+    background-image: linear-gradient(cadetblue, #f8fbfb);
     color: whitesmoke;
     /* border: 1px solid black; */
 }
@@ -78,7 +78,7 @@ main {
     padding: 0;
 }
 
-/* Line One */
+/* Container One */
 
 #tonight {
     position: relative; 
@@ -109,14 +109,14 @@ main {
         top: 0;
     }
     25%, 75% {
-        top: -15px;
+        top: -25px;
     }
     50% {
-        top: -25px;
+        top: -35px;
     }
 }
 
-/* Line Two  */
+/* Container Two  */
 
 #rattle {
     padding: 0 40%;
@@ -143,6 +143,58 @@ main {
     }
 }
 
+#bed {
+    position: relative;
+    height: 200px;
+    width: 400px;
+    margin: auto;
+}
+
+#peel {
+    position: relative;
+    top: 25px;
+}
+
+#peel span { 
+    position: relative;
+    -webkit-animation: peel 5s linear infinite;
+            animation: peel 5s linear infinite;
+}
+
+#peel span:nth-child(1) { -webkit-animation-delay: .1s; animation-delay: .1s; }
+#peel span:nth-child(2) { -webkit-animation-delay: .2s; animation-delay: .3s; }
+#peel span:nth-child(3) { -webkit-animation-delay: .3s; animation-delay: .5s; }
+#peel span:nth-child(4) { -webkit-animation-delay: .4s; animation-delay: .7s; }
+#peel span:nth-child(5) { -webkit-animation-delay: .5s; animation-delay: .9s; }
+#peel span:nth-child(6) { -webkit-animation-delay: .6s; animation-delay: 1s; }
+#peel span:nth-child(7) { -webkit-animation-delay: .7s; animation-delay: 1.3s; }
+#peel span:nth-child(8) { -webkit-animation-delay: .8s; animation-delay: 1.5s; }
+#peel span:nth-child(9) { -webkit-animation-delay: .9s; animation-delay: 1.7s; }
+#peel span:nth-child(10) { -webkit-animation-delay: 1s; animation-delay: 1.9s; }
+
+@keyframes peel {
+    25% { 
+        top: -20px;
+        left: 5px;
+        color: rgba(95,158,160, 0.8);
+    }
+    50% {
+        top: -25px;
+        left: 10px;
+        color: rgba(95,158,160, 0.6);
+    }
+    75% { 
+        top: -30px;
+        left: 15px;
+        color: rgba(95,158,160, 0.4);
+    }
+    100% {
+        top: -35px;
+        left: 20px;
+        color: rgba(95,158,160, 0.2);
+    }
+}
+
 
 /* Media Queries */
 
@@ -151,7 +203,8 @@ main {
         font-size: 15px;
     }
 
-    #moon {
+    #moon,
+    #bed {
         width: 75px;
         height: 75px;
     }
