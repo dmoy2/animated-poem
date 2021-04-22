@@ -273,7 +273,33 @@ main {
 /* Container Seven */
 
 #dance2 {
-    display: inline;
+    position: relative;
+    animation: sway 3s linear infinite;
+}
+
+#dance2 span {
+    position: relative;
+    animation: dance 2s linear infinite;
+}
+
+#dance2 span:nth-child(1) {-webkit-animation-delay: 0.1s; animation-delay: 0.1s;}
+#dance2 span:nth-child(2) {-webkit-animation-delay: 0.5s; animation-delay: 0.5s;}
+#dance2 span:nth-child(3) {-webkit-animation-delay: 0.1s; animation-delay: 0.1s;}
+#dance2 span:nth-child(4) {-webkit-animation-delay: 0.5s; animation-delay: 0.5s;}
+#dance2 span:nth-child(5) {-webkit-animation-delay: 0.1s; animation-delay: 0.1s;}
+
+
+@keyframes sway { 
+    25% { 
+        transform: skewX(-10deg);
+    }
+    50% {
+        transform: scale(1.0, 1.1);
+        color:rgba(95,158,160, 0.9);
+    }
+    75% {
+        transform: skewX(10deg);
+    }
 }
 
 /* Media Queries */
