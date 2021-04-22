@@ -274,12 +274,14 @@ main {
 
 #dance2 {
     position: relative;
-    animation: sway 3s linear infinite;
+    -webkit-animation: sway 3s linear infinite;
+            animation: sway 3s linear infinite;
 }
 
 #dance2 span {
     position: relative;
-    animation: dance 2s linear infinite;
+    -webkit-animation: dance 2s linear infinite;;
+            animation: dance 2s linear infinite;
 }
 
 #dance2 span:nth-child(1) {-webkit-animation-delay: 0.1s; animation-delay: 0.1s;}
@@ -304,6 +306,25 @@ main {
 
 
 /* Container Eight */
+
+#alive { 
+    position: relative;
+    -webkit-animation: heartbeat 2s ease-in infinite;
+            animation: heartbeat 2s ease-in infinite;
+}
+
+@keyframes heartbeat { 
+    25%, 75% {
+        transform: scale(1.2, 1.2);
+    }
+    50% { 
+        transform: scale(1.1, 1.1);
+    }
+}
+
+
+/* Container Nine */
+
 
 /* Media Queries */
 
