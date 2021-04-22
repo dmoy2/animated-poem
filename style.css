@@ -94,14 +94,14 @@ main {
 
 #dance span { 
     position: relative;
-    -webkit-animation: dance 1s ease-in infinite;
-            animation: dance 1s ease-in infinite;
+    -webkit-animation: dance 2s ease-in infinite;
+            animation: dance 2s ease-in infinite;
 }
 
 #dance span:nth-child(1) { -webkit-animation-delay: .1s; animation-delay: .1s; }
-#dance span:nth-child(2) { -webkit-animation-delay: .3s; animation-delay: .3s; }
+#dance span:nth-child(2) { -webkit-animation-delay: .5s; animation-delay: .5s; }
 #dance span:nth-child(3) { -webkit-animation-delay: .1s; animation-delay: .1s; }
-#dance span:nth-child(4) { -webkit-animation-delay: .3s; animation-delay: .3s; }
+#dance span:nth-child(4) { -webkit-animation-delay: .5s; animation-delay: .5s; }
 #dance span:nth-child(5) { -webkit-animation-delay: .1s; animation-delay: .1s; }
 
 @keyframes dance {
@@ -113,6 +113,7 @@ main {
     }
     50% {
         top: -35px;
+        color:rgba(95,158,160, 0.9);
     }
 }
 
@@ -297,7 +298,6 @@ main {
     }
     50% {
         transform: scale(1.0, 1.1);
-        color:rgba(95,158,160, 0.9);
     }
     75% {
         transform: skewX(10deg);
@@ -316,6 +316,7 @@ main {
 @keyframes heartbeat { 
     25%, 75% {
         transform: scale(1.2, 1.2);
+        color: rgba(0, 0, 0, 0.7);
     }
     50% { 
         transform: scale(1.1, 1.1);
@@ -324,6 +325,35 @@ main {
 
 
 /* Container Nine */
+
+#party { 
+    position: relative;
+    -webkit-animation: celebrate 1s linear infinite;
+            animation: celebrate 1s linear infinite;
+}
+
+@keyframes celebrate {
+    0% {
+        transform: scale(1);
+    } 
+    10%, 20% {
+        transform: scale(0.9) rotate(-3deg);
+    } 
+    30%, 50%, 70%, 90% {
+        transform: scale(1.1) rotate(3deg);
+    } 
+    40%, 60%, 80% {
+        transform: scale(1.1) rotate(-3deg);
+    } 
+    100% {
+        transform: scale(1) rotate(0);
+        color:cadetblue;
+    } 
+}
+
+.sig {
+    margin-bottom: 100px;
+}
 
 
 /* Media Queries */
